@@ -1,15 +1,7 @@
-<form>
-
-        <div class="Input">
-            <label>Username</label>
-            <input type="text" name="Username" [(ngModel)]="Username">
-        </div>
-        <div class="Input">
-            <label>Password</label>
-            <input type="Password" name="Password" [(ngModel)]="Password">
-        </div>
-        <div class="Input">
-            <input type="submit" value="Login">
-        </div>
-    </form>
-    <router-outlet></router-outlet>
+<input type="text" placeholder="username" #u1>
+<input type="password" placeholder="Password" #p2>
+<button (click) ="check(u1.value, p2.value)">login</button>
+<nav>
+<a routerLink="/services" routerLinkActive="Active">Services</a>
+</nav>
+<router-outlet></router-outlet>
