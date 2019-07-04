@@ -13,7 +13,11 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
+   localStorage.setItem('localData', 'yash');
+   sessionStorage.setItem('sessionData', 'yash2');
+
+   console.log(localStorage.getItem('localData'));
+  console.log(sessionStorage.getItem('sessionData'));
   }
   
 }
