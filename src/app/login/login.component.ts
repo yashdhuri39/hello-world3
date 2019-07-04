@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -6,15 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class LoginComponent implements OnInit {
-  inputText: string=""
+
+  inputText: string="inital value"
   inputText2:string =""
 
   constructor() { }
 
   ngOnInit() {
-    
+   
   }
-
+  
 }
       
    
