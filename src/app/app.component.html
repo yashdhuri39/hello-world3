@@ -9,5 +9,9 @@
 <nav>
   <a routerLink="/login" routerLinkActive="Active">login</a>
 </nav>
+<br>
+<button (click) =  "fetchAuth()">Fetch data</button>
+<ul>
+  <li *ngFor=" let the data$" |async>".{{fetchAuth}}></li>
 
 <router-outlet></router-outlet>
