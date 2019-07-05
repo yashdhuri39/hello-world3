@@ -12,8 +12,7 @@ export class AuthService {
 
   getdata(){
     return this.http.get(this._url);
-          .Subscribe(data =>{
-      console.log("we got",data)
-    })
+      
+    
   }
 }
