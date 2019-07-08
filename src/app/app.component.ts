@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService} from './auth.service';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { AuthService} from './auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = " hello-world3";
+  title = Message;
   data$;
   public Name ="Yash";
   public message= "";
