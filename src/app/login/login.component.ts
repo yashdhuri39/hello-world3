@@ -2,14 +2,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-login',
-  template:`<h2> {{"hello" +Ydata}}</h2>
-            <button (click)="FireEvent()">Send Event</button>` ,
+  templateUrl:`/login.component.html` ,
   styles: []
 })
 export class LoginComponent implements OnInit {
 
-  inputText: string="inital value"
-  inputText2:string =""
+  //inputText: string="inital value"
+  //inputText2:string =""
  @Input() public Ydata;
  @Output() public loginEvent = new EventEmitter
   constructor() { }
@@ -25,7 +24,7 @@ export class LoginComponent implements OnInit {
   {
     this.loginEvent.emit('hello yash');
   }
-  
+
 }
       
    
