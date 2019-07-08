@@ -9,6 +9,8 @@ import { AuthService} from './auth.service';
 export class AppComponent {
   title = " hello-world3";
   data$;
+  public Name ="Yash";
+  public message ="";
   constructor( private Authservice : AuthService){
 
   }
