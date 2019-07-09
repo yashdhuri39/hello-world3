@@ -9,6 +9,9 @@
 <nav>
   <a routerLink="/login" routerLinkActive="Active">login</a>
 </nav>
+<h1>Interaction </h1>
+<button (click)="sayhello()"> hello</button>
 <app-login (LoginEvent)="message=$event" [Ydata]="Name"></app-login>
+
 
 <router-outlet></router-outlet>
